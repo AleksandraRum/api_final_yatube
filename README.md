@@ -9,7 +9,7 @@
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-https://github.com/AleksandraRum/api_final_yatube.git
+git clone https://github.com/AleksandraRum/api_final_yatube.git
 ```
 
 ```
@@ -36,6 +36,15 @@ python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+Для работы с JWT установить и подключить библиотеки Djoser и Simple JWT:
+
+```
+pip install djoser djangorestframework-simplejwt==4.7.2 
+```
+```
+cd yatube_api
+```
+
 Выполнить миграции:
 
 ```
@@ -48,3 +57,12 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
+## Используемые технологии
+
+Python 3.7
+Django==2.2.16
+djangorestframework==3.12.4
+djangorestframework-simplejwt==4.7.2
+
+## Автор проекта
+Румянцева Саша, студентка курса Python-разработчик Яндекс-практикума.
