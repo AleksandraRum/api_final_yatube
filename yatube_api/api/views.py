@@ -53,7 +53,8 @@ class FollowViewSet(CreateListViewSet):
     serializer_class = FollowSerializer
     filter_backends = (filters.SearchFilter,)
     search_fields = ('following__username',)
-    permission_classes = (permissions.IsAuthenticated,)
+    """Зачем здесь пермишн, если я его установила на уровне проекта? Получается, он дублируется же."""
+    permission_classes = (permissions.IsAuthenticated,) 
 
     def get_queryset(self):
         queryset = Follow.objects.filter(user=self.request.user)
