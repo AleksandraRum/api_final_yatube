@@ -10,7 +10,7 @@
 ## Используемые технологии
 
 - Python 3.7
-- Django==2.2.16
+- Django==5.2
 - djangorestframework==3.12.4
 - djangorestframework-simplejwt==4.7.2
 
@@ -29,11 +29,11 @@ cd api_final_yatube
 Cоздать и активировать виртуальное окружение:
 
 ```
-python3 -m venv env
+python3 -m venv venv
 ```
 
 ```
-source env/bin/activate
+source venv/bin/activate
 ```
 
 Установить зависимости из файла requirements.txt:
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 Для работы с JWT установить и подключить библиотеки Djoser и Simple JWT:
 
 ```
-pip install djoser djangorestframework-simplejwt==4.7.2 
+pip install djoser djangorestframework-simplejwt
 ```
 ```
 cd yatube_api
